@@ -95,8 +95,8 @@ const auctions = [
 export default function Sales() {
   return (
     <section className="w-full md:w-8/12 mx-auto pb-16">
-      <div className="flex flex-col md:flex-row gap-6">
-        <div className="w-full border border-gray-50 md:rounded-xl p-4 md:p-8 md:w-[25rem]">
+      <div className="grid grid-cols-3 gap-6">
+        <div className="border border-gray-50 md:rounded-xl p-4 md:p-8">
           <h3 className="font-bold text-3xl mb-8">
             Check out the hottest Sale offers
           </h3>
@@ -135,7 +135,7 @@ export default function Sales() {
             </button>
           </div>
         </div>
-        <div className="bg-dark-100 md:rounded-xl w-full md:w-[25rem] pb-8 md:pb-0 mt-16 md:mt-0">
+        <div className="bg-dark-100 md:rounded-xl pb-8 md:pb-0 mt-16 md:mt-0">
           <div className="-mt-16">
             <img src={hand} alt="" className="w-96" />
           </div>
@@ -151,13 +151,13 @@ export default function Sales() {
           <div className=" mx-8 mt-8">
             <button
               type="button"
-              className="bg-gradient-to-r py-2 rounded-xl border border-purple-dark border-b-4 border-l-2 shadow-lg w-full from-[#4745D0] to-purple-dark text-white tex-sm"
+              className="w-full bg-gradient-to-r py-2 rounded-xl border border-purple-dark border-b-4 border-l-2 shadow-lg from-[#4745D0] to-purple-dark text-white tex-sm"
             >
               Get started
             </button>
           </div>
         </div>
-        <div className="border border-gray-50 md:rounded-xl p-4 md:p-8 w-full md:w-[25rem]">
+        <div className="border border-gray-50 md:rounded-xl p-4 md:p-8">
           <h3 className="font-bold text-3xl mb-8">Top NFT at a lower price</h3>
           <div className="flex flex-col gap-4">
             {topNFT.map(({ thumbnail, title, timeLeft, price, bids }) => {
