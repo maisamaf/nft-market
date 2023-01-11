@@ -103,18 +103,21 @@ export default function Sales() {
           <div className="flex flex-col">
             <div className="flex overflow-x-auto gap-2">
               {auctions.map(
-                ({
-                  thumbnail,
-                  title,
-                  price,
-                  timeLeft,
-                  peopleBidding,
-                  likes,
-                  className,
-                }) => {
+                (
+                  {
+                    thumbnail,
+                    title,
+                    price,
+                    timeLeft,
+                    peopleBidding,
+                    likes,
+                    className,
+                  },
+                  index
+                ) => {
                   return (
                     <Card
-                      key={title}
+                      key={index}
                       thumbnail={thumbnail}
                       title={title}
                       price={price}
