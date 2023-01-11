@@ -4,12 +4,6 @@ import image7 from "../assets/posters/image-7.svg";
 import image8 from "../assets/posters/image-8.svg";
 import image9 from "../assets/posters/image-9.svg";
 
-// avatars
-import woman1 from "../assets/avatars/woman-1.svg";
-import woman2 from "../assets/avatars/woman-2.svg";
-import man1 from "../assets/avatars/man-1.svg";
-import man2 from "../assets/avatars/man-2.svg";
-
 // posters
 import image1 from "../assets/posters/image-1.svg";
 import image2 from "../assets/posters/image-2.svg";
@@ -18,7 +12,7 @@ import image4 from "../assets/posters/image-4.svg";
 import image5 from "../assets/posters/image-5.svg";
 
 // icons
-import iconHand from "../assets/iconhand.png";
+import hand from "../assets/hand.png";
 import Card from "../components/Card";
 const topNFT = [
   {
@@ -51,7 +45,6 @@ const topNFT = [
   },
 ];
 
-const avatars = [woman1, woman2, man1, man2];
 const auctions = [
   {
     thumbnail: image1,
@@ -141,7 +134,7 @@ export default function Sales() {
         </div>
         <div className="bg-dark-100 md:rounded-xl w-full md:w-[25rem] pb-8 md:pb-0 mt-16 md:mt-0">
           <div className="-mt-16">
-            <img src={iconHand} alt="" className="w-96" />
+            <img src={hand} alt="" className="w-96" />
           </div>
           <div className="max-w-xs px-6 mt-4">
             <h3 className="text-white font-bold text-2xl">
