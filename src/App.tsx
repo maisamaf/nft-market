@@ -6,14 +6,14 @@ import iconBucket from "./assets/bucket.svg";
 import Sales from "./sections/Sales";
 function App() {
   return (
-    <div className="relative h-screen w-full">
+    <div className="relative h-screen w-full overflow-x-hidden mx-auto">
       <Header />
       <Auctions />
-      <section className="w-8/12 mx-auto pb-16">
+      <section className="mx-4 md:w-8/12 md:mx-auto pb-16">
         <div className="flex md:flex-row flex-col justify-between items-center">
           <div className="flex-1 font-thin flex flex-col justify-end">
             <p className="uppercase text-sm text-gray-100">Overline</p>
-            <h2 className="text-6xl mt-2 mb-4 font-bold leading-tight">
+            <h2 className="text-4xl md:text-6xl mt-2 mb-4 font-bold leading-tight">
               Sapien ipsum <br /> scelerisque <br /> convallis fusce
             </h2>
             <p className="text-gray-100 text-sm max-w-md">
@@ -36,7 +36,7 @@ function App() {
             </div>
           </div>
           <div className="flex-1 flex justify-end">
-            <img src={iconBucket} alt="" className="" />
+            <img src={iconBucket} alt="" className="h-80" />
           </div>
         </div>
       </section>

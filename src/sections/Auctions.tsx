@@ -23,7 +23,7 @@ const auctions = [
     timeLeft: "12:15 min left",
     peopleBidding: "19 People are bidding",
     likes: 120,
-    className: "snap-center",
+    className: { width: "w-[22rem]", height: "h-[30rem]" },
   },
   {
     thumbnail: image2,
@@ -33,7 +33,7 @@ const auctions = [
     timeLeft: "37:01 min left",
     peopleBidding: "12 People are bidding",
     likes: 98,
-    className: "snap-center",
+    className: { width: "w-[22rem]", height: "h-[30rem]" },
   },
   {
     thumbnail: image3,
@@ -43,7 +43,7 @@ const auctions = [
     timeLeft: "22:59 min left",
     peopleBidding: "101 People are bidding",
     likes: 570,
-    className: "snap-center",
+    className: { width: "w-[22rem]", height: "h-[30rem]" },
   },
   {
     thumbnail: image4,
@@ -53,7 +53,7 @@ const auctions = [
     timeLeft: "02:41 min left",
     peopleBidding: "35 People are bidding",
     likes: 120,
-    className: "snap-center",
+    className: { width: "w-[22rem]", height: "h-[30rem]" },
   },
   {
     thumbnail: image5,
@@ -63,31 +63,34 @@ const auctions = [
     timeLeft: "57:15 min left",
     peopleBidding: "14 People are bidding",
     likes: 54,
-    className: "snap-center",
+    className: { width: "w-[22rem]", height: "h-[30rem]" },
   },
 ];
 
 function Auctions() {
   return (
-    <section className="w-full justify-center pb-16">
-      <h2 className="text-4xl text-dark-100 mb-16 text-center">
+    <section className="w-full pb-16 mt-16">
+      <h2 className="text-3xl md:text-4xl text-dark-100 mb-16 text-center">
         Latest Live Auctions
       </h2>
-      <div className="flex w-full justify-center snap-x snap-mandatory gap-10 overflow-x-auto">
+      <div className="flex justify-center gap-8 overflow-x-auto">
         {auctions.map(
-          ({
-            thumbnail,
-            avatars,
-            title,
-            price,
-            timeLeft,
-            peopleBidding,
-            likes,
-            className,
-          }) => {
+          (
+            {
+              thumbnail,
+              avatars,
+              title,
+              price,
+              timeLeft,
+              peopleBidding,
+              likes,
+              className,
+            },
+            index
+          ) => {
             return (
               <Card
-                key={title}
+                key={index}
                 thumbnail={thumbnail}
                 avatars={avatars}
                 title={title}

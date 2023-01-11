@@ -19,9 +19,11 @@ export default function HorizontalCard({
 }: Props) {
   return (
     <div className="flex gap-4">
-      <img src={thumbnail} alt="" className="h-28 rounded-xl drop-shadow-md" />
+      <img src={thumbnail} alt="" className="h-24 rounded-xl drop-shadow-md" />
       <div className="flex flex-col justify-between">
-        <h5 className="font-semibold text-sm break-words">{title}</h5>
+        <h5 className="font-semibold text-sm break-words line-clamp-2">
+          {title}
+        </h5>
         <div className="flex justify-between">
           <div className="flex gap-2 items-center">
             <img src={iconClock} alt="" className="h-5 w-5" />
