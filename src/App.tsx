@@ -7,7 +7,10 @@ import iconEmoji from "./assets/emoji.svg";
 import iconEdit from "./assets/icon-edit.svg";
 import iconTik from "./assets/icon-tik.svg";
 
+// sections
 import Sales from "./sections/Sales";
+
+import { ReactSVG } from "react-svg";
 function App() {
   return (
     <div className="relative h-screen w-full overflow-x-hidden mx-auto">
@@ -40,18 +43,18 @@ function App() {
             </div>
           </div>
           <div className="flex-1 flex justify-end">
-            <img src={iconBucket} alt="" className="h-80" />
+            <img src={iconBucket} alt="" />
           </div>
         </div>
       </section>
       <Sales />
 
-      <section className="mx-4 md:w-8/12 md:mx-auto py-20">
+      <section className="mx-4 md:w-9/12 md:mx-auto py-20">
         <div className="flex md:flex-row flex-col justify-between items-center">
           <div className="flex-1 flex justify-start">
-            <img src={iconEmoji} alt="" className="h-96" />
+            <img src={iconEmoji} alt="" className="w-[90%]" />
           </div>
-          <div className="flex-1 font-thin flex flex-col justify-end">
+          <div className="flex-1 font-thin flex flex-col justify-start">
             <p className="uppercase text-sm text-gray-100">Overline</p>
             <h2 className="text-4xl md:text-6xl mt-2 mb-4 font-semibold leading-tight">
               Habitant tristique <br /> aliquam in vel
