@@ -9,8 +9,7 @@ import iconTik from "./assets/icon-tik.svg";
 
 // sections
 import Sales from "./sections/Sales";
-
-import { ReactSVG } from "react-svg";
+import PopularAuctions from "./sections/PopularAuctions";
 function App() {
   return (
     <div className="relative h-screen w-full overflow-x-hidden mx-auto">
@@ -49,7 +48,7 @@ function App() {
       </section>
       <Sales />
 
-      <section className="mx-4 md:w-9/12 md:mx-auto py-20">
+      <section className="mx-4 md:w-9/12 md:mx-auto pt-20 pb-32">
         <div className="flex md:flex-row flex-col justify-between items-center">
           <div className="flex-1 flex justify-start">
             <img src={iconEmoji} alt="" className="w-[90%]" />
@@ -99,7 +98,9 @@ function App() {
         </div>
       </section>
 
-      <hr />
+      <hr className="pb-16" />
+
+      <PopularAuctions />
     </div>
   );
 }
