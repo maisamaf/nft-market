@@ -1,134 +1,52 @@
-import HorizontalCard from "../components/HorizontalCard";
-import image6 from "../assets/posters/image-6.svg";
-import image7 from "../assets/posters/image-7.svg";
-import image8 from "../assets/posters/image-8.svg";
-import image9 from "../assets/posters/image-9.svg";
+// data
+import { sales, topNFT } from "../data";
 
-// posters
-import image1 from "../assets/posters/image-1.svg";
-import image2 from "../assets/posters/image-2.svg";
-import image3 from "../assets/posters/image-3.svg";
-import image4 from "../assets/posters/image-4.svg";
-import image5 from "../assets/posters/image-5.svg";
+// component
+import HorizontalCard from "../components/HorizontalCard";
 
 // icons
 import hand from "../assets/hand.png";
 import Card from "../components/Card";
-const topNFT = [
-  {
-    thumbnail: image6,
-    title: "Vulputate velit viverra volutpat volutpat tristique",
-    timeLeft: "22:29",
-    price: "1.25 ETH",
-    bids: "101 people are bidding",
-  },
-  {
-    thumbnail: image7,
-    title: "Egestas blandit sit egestas non sed. Purus semper",
-    timeLeft: "10:28",
-    price: "1.30 ETH",
-    bids: "28 people are bidding",
-  },
-  {
-    thumbnail: image8,
-    title: "Id ut consequat netus nec vel amet ut porta in augue",
-    timeLeft: "11:04",
-    price: "1.5 ETH",
-    bids: "95 people are bidding",
-  },
-  {
-    thumbnail: image9,
-    title: "Sed et nibh felis integer tellus turpin",
-    timeLeft: "09:28",
-    price: "1.2 ETH",
-    bids: "28 people are bidding",
-  },
-];
 
-const auctions = [
-  {
-    thumbnail: image1,
-    title: "Fames habitasse risus ultricies tortor sit",
-    price: "3.19 ETH",
-    timeLeft: "12:15 min left",
-    peopleBidding: "19 People are bidding",
-    likes: 120,
-    className: { width: "w-[12rem]", height: "h-[18rem]" },
-  },
-  {
-    thumbnail: image2,
-    title: "Senectus adipiscing nascetur accumsan etiam",
-    price: "1.63 ETH",
-    timeLeft: "37:01 min left",
-    peopleBidding: "12 People are bidding",
-    likes: 98,
-    className: { width: "w-[12rem]", height: "h-[18rem]" },
-  },
-  {
-    thumbnail: image3,
-    title: "Dui accumsan leo vestibulum ornare eu",
-    price: "1.11 ETH",
-    timeLeft: "22:59 min left",
-    peopleBidding: "101 People are bidding",
-    likes: 570,
-    className: { width: "w-[12rem]", height: "h-[18rem]" },
-  },
-  {
-    thumbnail: image4,
-    title: "Vulputate felis purus viverra morbi facilisi eget",
-    price: "3.19 ETH",
-    timeLeft: "02:41 min left",
-    peopleBidding: "35 People are bidding",
-    likes: 120,
-    className: { width: "w-[12rem]", height: "h-[18rem]" },
-  },
-  {
-    thumbnail: image5,
-    title: "Tristique diam a, enim, eros tellus. Viverra etiam",
-    price: "2.55 ETH",
-    timeLeft: "57:15 min left",
-    peopleBidding: "14 People are bidding",
-    likes: 54,
-    className: { width: "w-[12rem]", height: "h-[18rem]" },
-  },
-];
 export default function Sales() {
   return (
     <section className="w-full md:w-8/12 mx-auto pb-16">
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 grid-cols-1 overflow-x-scroll gap-6">
         <div className="border border-gray-50 md:rounded-xl p-4 md:p-8">
           <h3 className="font-bold text-3xl mb-8">
             Check out the hottest Sale offers
           </h3>
           <div className="flex flex-col">
             <div className="flex overflow-x-auto gap-2">
-              {auctions.map(
-                (
-                  {
-                    thumbnail,
-                    title,
-                    price,
-                    timeLeft,
-                    peopleBidding,
-                    likes,
-                    className,
-                  },
-                  index
-                ) => {
-                  return (
-                    <Card
-                      key={index}
-                      thumbnail={thumbnail}
-                      title={title}
-                      price={price}
-                      timeLeft={timeLeft}
-                      peopleBidding={peopleBidding}
-                      likes={likes}
-                      className={className}
-                    />
-                  );
-                }
-              )}
+              {sales
+                .slice(0, 5)
+                .map(
+                  (
+                    {
+                      thumbnail,
+                      title,
+                      price,
+                      timeLeft,
+                      peopleBidding,
+                      likes,
+                      className,
+                    },
+                    index
+                  ) => {
+                    return (
+                      <Card
+                        key={index}
+                        thumbnail={thumbnail}
+                        title={title}
+                        price={price}
+                        timeLeft={timeLeft}
+                        peopleBidding={peopleBidding}
+                        likes={likes}
+                        className={className}
+                      />
+                    );
+                  }
+                )}
             </div>
             <button className="w-full py-2 text-sm text-gray-100 border border-gray-100 mt-8 rounded-xl">
               Show me more
