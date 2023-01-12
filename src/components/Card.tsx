@@ -8,7 +8,7 @@ type Props = {
   price: string;
   timeLeft: string;
   peopleBidding: string;
-  likes: number;
+  likes?: number;
   className: { width: string; height: string };
 };
 
@@ -23,7 +23,7 @@ export default function Card({
   className,
 }: Props) {
   return (
-    <div className={`flex flex-col shrink-0 ${className.width}`}>
+    <div className={`flex flex-col flex-shrink-0 ${className.width}`}>
       <img
         src={thumbnail}
         alt={title}
@@ -46,8 +46,8 @@ export default function Card({
         </div>
       ) : (
         <div className="flex justify-between mt-6 mb-4">
-          <div className="flex gap-3">
-            <img src={iconClock} alt="" className="inline" />
+          <div className="flex flex-1 items-center gap-1">
+            <img src={iconClock} alt="" />
             <p className="inline text-xs text-gray-100 font-thin">{timeLeft}</p>
           </div>
           <p className="bg-purple-dark/10 text-purple-dark min-w-max text-xs h-fit px-2 py-1">
@@ -76,7 +76,9 @@ export default function Card({
         </div>
         <div className="flex gap-2 items-center">
           <img src={iconFavorite} className="inline h-5 w-5" alt="" />
-          <p className="inline text-xs font-normal text-gray-50">{likes}</p>
+          {likes && (
+            <p className="inline text-xs font-normal text-gray-50">{likes}</p>
+          )}
         </div>
       </div>
     </div>
