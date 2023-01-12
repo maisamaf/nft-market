@@ -1,18 +1,19 @@
+// component
 import Navbar from "../components/Navbar";
+
+// images
 import vector1 from "../assets/vector.svg";
 import vector2 from "../assets/vector2.svg";
 import iconSearch from "../assets/search-icon.svg";
-
 import ritterLogo from "../assets/brands/ritter-sport.svg";
 import nikeLogo from "../assets/brands/nike.svg";
 import adidasLogo from "../assets/brands/adidas.svg";
 import newHollandLogo from "../assets/brands/new-holland.svg";
 import squares from "../assets/squares.svg";
-type Props = {};
 
 const brands = [ritterLogo, nikeLogo, adidasLogo, newHollandLogo];
 
-function Header({}: Props) {
+export default function Header() {
   return (
     <header className="w-full h-full items-center justify-center bg-background overflow-hidden">
       <Navbar />
@@ -86,5 +87,3 @@ function Header({}: Props) {
     </header>
   );
 }
-
-export default Header;
