@@ -64,8 +64,8 @@ export default function Card({
                 return (
                   <img
                     src={avatar}
-                    alt=""
-                    className="border rounded-full border-white -ml-4 h-10 w-10"
+                    alt="User Image"
+                    className="border rounded-full border-white first:ml-0 -ml-4 h-10 w-10"
                   />
                 );
               })}
