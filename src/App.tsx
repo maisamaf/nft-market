@@ -10,6 +10,8 @@ import iconTik from "./assets/icon-tik.svg";
 // sections
 import Sales from "./sections/Sales";
 import PopularAuctions from "./sections/PopularAuctions";
+import Stats from "./sections/Stats";
+import Footer from "./sections/Footer";
 function App() {
   return (
     <div className="relative h-screen w-full overflow-x-hidden mx-auto">
@@ -101,6 +103,9 @@ function App() {
       <hr className="pb-16" />
 
       <PopularAuctions />
+      <Stats />
+
+      <Footer />
     </div>
   );
 }
