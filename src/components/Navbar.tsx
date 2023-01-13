@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/logo.svg";
+import NavLink from "./NavLink";
 
 type Props = {};
 
@@ -80,16 +81,16 @@ function Navbar({}: Props) {
         >
           <ul className="flex space-y-4 md:space-y-0 flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-10 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
             <li>
-              <Link to="">Auctions</Link>
+              <NavLink to="">Auctions</NavLink>
             </li>
             <li>
-              <Link to="">Roadmap</Link>
+              <NavLink to="">Roadmap</NavLink>
             </li>
             <li>
-              <Link to="">Discover</Link>
+              <NavLink to="">Discover</NavLink>
             </li>
             <li>
-              <Link to="">Community</Link>
+              <NavLink to="">Community</NavLink>
             </li>
             <li>
               <button
