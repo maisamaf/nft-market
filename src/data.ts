@@ -21,6 +21,12 @@ import woman2 from "./assets/avatars/woman-2.svg";
 import man1 from "./assets/avatars/man-1.svg";
 import man2 from "./assets/avatars/man-2.svg";
 
+// icons
+import users from "./assets/users.svg";
+import artwork from "./assets/artwork.svg";
+import artist from "./assets/artist.svg";
+import wallet from "./assets/wallet.svg";
+
 // auctions
 const avatars = [woman1, woman2, man1, man2];
 export const auctions = [
@@ -205,5 +211,30 @@ export const popularAuctions = [
     timeLeft: "22:59 min left",
     peopleBidding: "101 People are bidding",
     className: { width: "w-[12rem]", height: "h-[18rem]" },
+  },
+];
+
+// stats
+
+export const stats = [
+  {
+    icon: users,
+    number: "300k",
+    description: "Users Active",
+  },
+  {
+    icon: artwork,
+    number: "52,5k",
+    description: "Artworks",
+  },
+  {
+    icon: artist,
+    number: "17,5k",
+    description: "Artists",
+  },
+  {
+    icon: wallet,
+    number: "35,58",
+    description: "ETH Spent",
   },
 ];
