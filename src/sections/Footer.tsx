@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <div className="flex flex-col md:flex-row mx-4 rounded-xl my-10 border border-gray-20">
+    <footer className="flex flex-col md:flex-row mx-4 rounded-xl my-10 border border-gray-20">
       <div className="flex-1 h-80 flex flex-col justify-between p-8">
         <Link to="/" className="flex gap-3">
           <img src={logo} alt="" />
@@ -24,7 +24,7 @@ export default function Footer({}: Props) {
           </li>
         </ul>
       </div>
-      <div className="flex-1 flex flex-col border-t md:border-l justify-between border-gray-50">
+      <div className="flex-1 flex flex-col border-t md:border-l md:border-t-0 justify-between border-gray-20">
         <ul className="space-y-4 p-5 md:p-10">
           <li className="font-bold">
             <NavLink to="">Auctions</NavLink>
@@ -118,7 +118,7 @@ export default function Footer({}: Props) {
           </Link>
         </div>
       </div>
-      <div className="flex-1 flex flex-col p-5 md:p-10 border-t md:border-l justify-between border-gray-50  bg-gradient-to-b from-white to-gray-10">
+      <div className="flex-1 flex flex-col p-5 md:p-10 border-t md:border-l md:border-t-0 justify-between border-gray-20  bg-gradient-to-b from-white to-gray-10">
         <p className="text-gray-100">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ad
           alias accusamus sint nobis rem. Consequuntur corporis, nam autem quod
@@ -135,6 +135,6 @@ export default function Footer({}: Props) {
           </button>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
