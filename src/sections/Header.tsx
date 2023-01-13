@@ -15,7 +15,7 @@ const brands = [ritterLogo, nikeLogo, adidasLogo, newHollandLogo];
 
 export default function Header() {
   return (
-    <header className="w-full h-full items-center justify-center bg-background overflow-hidden">
+    <header className="w-full h-full pb-20 md:pb-0 items-center justify-center bg-background overflow-hidden">
       <Navbar />
       <div className="h-full flex flex-col items-center justify-center text-gray-100">
         <div className="relative w-full space-y-8 flex flex-col items-center justify-center text-center">
@@ -78,7 +78,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className="flex gap-14 my-24">
+        <div className="flex flex-wrap gap-14 my-24">
           {brands.map((brand) => {
             return <img src={brand} alt="" />;
           })}
