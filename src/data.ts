@@ -10,10 +10,10 @@ import image8 from "./assets/posters/image-8.svg";
 import image9 from "./assets/posters/image-9.svg";
 import image10 from "./assets/posters/image-10.png";
 import image11 from "./assets/posters/image-11.png";
-import image12 from "./assets/posters/image-12.png";
-import image13 from "./assets/posters/image-13.png";
+import image12 from "./assets/posters/Image-12.png";
+import image13 from "./assets/posters/Image-13.png";
 import image14 from "./assets/posters/image-14.png";
-import image15 from "./assets/posters/image-15.png";
+import image15 from "./assets/posters/Image-15.png";
 
 // avatars
 import woman1 from "./assets/avatars/woman-1.svg";
