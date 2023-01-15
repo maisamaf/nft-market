@@ -10,7 +10,7 @@ export default function Auctions() {
       <h2 className="text-3xl md:text-4xl text-dark-100 mb-16 text-center">
         Latest Live Auctions
       </h2>
-      <div className="flex justify-center gap-8 overflow-x-auto">
+      <div className="px-4 flex gap-8 flex-row-reverse overflow-x-auto">
         {auctions.map(
           (
             {
@@ -21,6 +21,7 @@ export default function Auctions() {
               timeLeft,
               peopleBidding,
               likes,
+              isFavorite,
               className,
             },
             index
@@ -35,6 +36,7 @@ export default function Auctions() {
                 timeLeft={timeLeft}
                 peopleBidding={peopleBidding}
                 likes={likes}
+                isFavorite={isFavorite}
                 className={className}
               />
             );

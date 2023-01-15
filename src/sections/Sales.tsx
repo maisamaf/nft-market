@@ -5,7 +5,7 @@ import { sales, topNFT } from "../data";
 import HorizontalCard from "../components/HorizontalCard";
 
 // icons
-import hand from "../assets/hand.png";
+import hand from "../assets/icons/hand.png";
 import Card from "../components/Card";
 
 export default function Sales() {
@@ -28,7 +28,6 @@ export default function Sales() {
                       price,
                       timeLeft,
                       peopleBidding,
-                      likes,
                       className,
                     },
                     index
@@ -41,7 +40,6 @@ export default function Sales() {
                         price={price}
                         timeLeft={timeLeft}
                         peopleBidding={peopleBidding}
-                        likes={likes}
                         className={className}
                       />
                     );
@@ -78,18 +76,21 @@ export default function Sales() {
         <div className="border border-gray-50 md:rounded-xl p-4 md:p-8">
           <h3 className="font-bold text-3xl mb-8">Top NFT at a lower price</h3>
           <div className="flex flex-col gap-4">
-            {topNFT.map(({ thumbnail, title, timeLeft, price, bids }) => {
-              return (
-                <HorizontalCard
-                  key={title}
-                  thumbnail={thumbnail}
-                  title={title}
-                  timeLeft={timeLeft}
-                  price={price}
-                  bids={bids}
-                />
-              );
-            })}
+            {topNFT.map(
+              ({ thumbnail, title, timeLeft, price, isFavorite, bids }) => {
+                return (
+                  <HorizontalCard
+                    key={title}
+                    thumbnail={thumbnail}
+                    title={title}
+                    timeLeft={timeLeft}
+                    price={price}
+                    isFavorite={isFavorite}
+                    bids={bids}
+                  />
+                );
+              }
+            )}
             <button className="w-full py-2 text-sm text-gray-100 border border-gray-100 mt-8 rounded-xl">
               Show me more
             </button>
