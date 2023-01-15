@@ -22,10 +22,10 @@ import man1 from "./assets/avatars/man-1.svg";
 import man2 from "./assets/avatars/man-2.svg";
 
 // icons
-import users from "./assets/users.svg";
-import artwork from "./assets/artwork.svg";
-import artist from "./assets/artist.svg";
-import wallet from "./assets/wallet.svg";
+import users from "./assets/icons/users.svg";
+import artwork from "./assets/icons/artwork.svg";
+import artist from "./assets/icons/artist.svg";
+import wallet from "./assets/icons/wallet.svg";
 
 // auctions
 const avatars = [woman1, woman2, man1, man2];
@@ -38,7 +38,8 @@ export const auctions = [
     timeLeft: "12:15 min left",
     peopleBidding: "19 People are bidding",
     likes: 120,
-    className: { width: "w-[22rem]", height: "h-[30rem]" },
+    isFavorite: true,
+    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
   },
   {
     thumbnail: image2,
@@ -48,7 +49,8 @@ export const auctions = [
     timeLeft: "37:01 min left",
     peopleBidding: "12 People are bidding",
     likes: 98,
-    className: { width: "w-[22rem]", height: "h-[30rem]" },
+    isFavorite: true,
+    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
   },
   {
     thumbnail: image3,
@@ -58,7 +60,8 @@ export const auctions = [
     timeLeft: "22:59 min left",
     peopleBidding: "101 People are bidding",
     likes: 570,
-    className: { width: "w-[22rem]", height: "h-[30rem]" },
+    isFavorite: true,
+    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
   },
   {
     thumbnail: image4,
@@ -68,7 +71,7 @@ export const auctions = [
     timeLeft: "02:41 min left",
     peopleBidding: "35 People are bidding",
     likes: 120,
-    className: { width: "w-[22rem]", height: "h-[30rem]" },
+    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
   },
   {
     thumbnail: image5,
@@ -78,7 +81,19 @@ export const auctions = [
     timeLeft: "57:15 min left",
     peopleBidding: "14 People are bidding",
     likes: 54,
-    className: { width: "w-[22rem]", height: "h-[30rem]" },
+    isFavorite: true,
+    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
+  },
+  {
+    thumbnail: image4,
+    avatars: avatars,
+    title: "Vulputate felis purus viverra morbi facilisi eget",
+    price: "3.19 ETH",
+    timeLeft: "02:41 min left",
+    peopleBidding: "35 People are bidding",
+    likes: 120,
+    isFavorite: true,
+    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
   },
 ];
 
@@ -88,46 +103,41 @@ export const sales = [
     thumbnail: image1,
     title: "Fames habitasse risus ultricies tortor sit",
     price: "3.19 ETH",
-    timeLeft: "12:15 min left",
+    timeLeft: "12:15",
     peopleBidding: "19 People are bidding",
-    likes: 120,
-    className: { width: "w-[12rem]", height: "h-[18rem]" },
+    className: { width: "w-[16rem]", height: "h-[18rem]" },
   },
   {
     thumbnail: image2,
     title: "Senectus adipiscing nascetur accumsan etiam",
     price: "1.63 ETH",
-    timeLeft: "37:01 min left",
+    timeLeft: "37:01",
     peopleBidding: "12 People are bidding",
-    likes: 98,
-    className: { width: "w-[12rem]", height: "h-[18rem]" },
+    className: { width: "w-[16rem]", height: "h-[18rem]" },
   },
   {
     thumbnail: image3,
     title: "Dui accumsan leo vestibulum ornare eu",
     price: "1.11 ETH",
-    timeLeft: "22:59 min left",
+    timeLeft: "22:59",
     peopleBidding: "101 People are bidding",
-    likes: 570,
-    className: { width: "w-[12rem]", height: "h-[18rem]" },
+    className: { width: "w-[16rem]", height: "h-[18rem]" },
   },
   {
     thumbnail: image4,
     title: "Vulputate felis purus viverra morbi facilisi eget",
     price: "3.19 ETH",
-    timeLeft: "02:41 min left",
+    timeLeft: "02:41",
     peopleBidding: "35 People are bidding",
-    likes: 120,
-    className: { width: "w-[12rem]", height: "h-[18rem]" },
+    className: { width: "w-[16rem]", height: "h-[18rem]" },
   },
   {
     thumbnail: image5,
     title: "Tristique diam a, enim, eros tellus. Viverra etiam",
     price: "2.55 ETH",
-    timeLeft: "57:15 min left",
+    timeLeft: "57:15",
     peopleBidding: "14 People are bidding",
-    likes: 54,
-    className: { width: "w-[12rem]", height: "h-[18rem]" },
+    className: { width: "w-[16rem]", height: "h-[18rem]" },
   },
 ];
 
@@ -137,6 +147,7 @@ export const topNFT = [
     title: "Vulputate velit viverra volutpat volutpat tristique",
     timeLeft: "22:29",
     price: "1.25 ETH",
+    isFavorite: true,
     bids: "101 people are bidding",
   },
   {
@@ -144,6 +155,7 @@ export const topNFT = [
     title: "Egestas blandit sit egestas non sed. Purus semper",
     timeLeft: "10:28",
     price: "1.30 ETH",
+    isFavorite: true,
     bids: "28 people are bidding",
   },
   {
@@ -151,6 +163,7 @@ export const topNFT = [
     title: "Id ut consequat netus nec vel amet ut porta in augue",
     timeLeft: "11:04",
     price: "1.5 ETH",
+    isFavorite: true,
     bids: "95 people are bidding",
   },
   {
@@ -158,6 +171,7 @@ export const topNFT = [
     title: "Sed et nibh felis integer tellus turpin",
     timeLeft: "09:28",
     price: "1.2 ETH",
+    isFavorite: true,
     bids: "28 people are bidding",
   },
 ];

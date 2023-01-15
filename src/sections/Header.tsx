@@ -2,14 +2,14 @@
 import Navbar from "../components/Navbar";
 
 // images
-import vector1 from "../assets/vector.svg";
-import vector2 from "../assets/vector2.svg";
-import iconSearch from "../assets/search-icon.svg";
+import vector1 from "../assets/icons/vector.svg";
+import vector2 from "../assets/icons/vector2.svg";
+import iconSearch from "../assets/icons/search-icon.svg";
 import ritterLogo from "../assets/brands/ritter-sport.svg";
 import nikeLogo from "../assets/brands/nike.svg";
 import adidasLogo from "../assets/brands/adidas.svg";
 import newHollandLogo from "../assets/brands/new-holland.svg";
-import squares from "../assets/squares.svg";
+import squares from "../assets/icons/squares.svg";
 
 const brands = [ritterLogo, nikeLogo, adidasLogo, newHollandLogo];
 
@@ -78,7 +78,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap gap-14 my-24">
+        <div className="flex flex-wrap gap-14 mt-32">
           {brands.map((brand) => {
             return <img src={brand} alt="" />;
           })}
