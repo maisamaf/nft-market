@@ -22,7 +22,7 @@ export default function HorizontalCard({
   return (
     <div className="flex gap-4">
       <img src={thumbnail} alt="" className="h-24 rounded-xl drop-shadow-md" />
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between w-full">
         <h5 className="font-semibold text-sm break-words line-clamp-2">
           {title}
         </h5>
@@ -35,7 +35,7 @@ export default function HorizontalCard({
             {price}
           </p>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-wrap justify-between">
           <p className="text-sm font-thin text-gray-100 min-w-max">{bids}</p>
           {isFavorite ? (
             <svg

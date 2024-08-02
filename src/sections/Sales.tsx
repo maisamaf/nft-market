@@ -10,8 +10,8 @@ import Card from "../components/Card";
 
 export default function Sales() {
   return (
-    <section className="w-full md:w-8/12 mx-auto pb-16">
-      <div className="grid md:grid-cols-3 grid-cols-1 overflow-x-scroll gap-6">
+    <section className="w-full xl:w-10/12 mx-auto pb-16">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 overflow-x-scroll gap-6">
         <div className="border border-gray-50 md:rounded-xl p-4 md:p-8">
           <h3 className="font-bold text-3xl mb-8">
             Check out the hottest Sale offers
@@ -55,7 +55,7 @@ export default function Sales() {
           <div className="-mt-16">
             <img src={hand} alt="" className="w-96" />
           </div>
-          <div className="max-w-xs px-6 mt-4">
+          <div className="max-w-xs px-6 mt-2">
             <h3 className="text-white font-bold text-2xl">
               Get started creating & selling your NFTs
             </h3>
@@ -64,7 +64,7 @@ export default function Sales() {
               Mi est sit.
             </p>
           </div>
-          <div className=" mx-8 mt-8">
+          <div className=" mx-8 my-4">
             <button
               type="button"
               className="w-full bg-gradient-to-r py-2 rounded-xl border border-purple-dark border-b-4 border-l-2 shadow-lg from-[#4745D0] to-purple-dark text-white tex-sm"

@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Footer({}: Props) {
   return (
-    <footer className="flex flex-col md:flex-row mx-4 rounded-xl my-10 border border-gray-20">
+    <footer className="flex flex-col lg:flex-row mx-4 rounded-xl my-10 border border-gray-20">
       <div className="flex-1 h-80 flex flex-col justify-between p-8">
         <Link to="/" className="flex gap-3">
           <img src={logo} alt="" />
@@ -118,19 +118,19 @@ export default function Footer({}: Props) {
           </Link>
         </div>
       </div>
-      <div className="flex-1 flex flex-col p-5 md:p-10 border-t md:border-l md:border-t-0 justify-between border-gray-20  bg-gradient-to-b from-white to-gray-10">
+      <div className="flex-1 flex flex-col p-5 md:p-10 border-t md:border-l md:border-t-0 justify-around border-gray-20  bg-gradient-to-b from-white to-gray-10">
         <p className="text-gray-100">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ad
           alias accusamus sint nobis rem. Consequuntur corporis, nam autem quod
           aliquam temporibus at. Vitae facere quasi sunt ullam qui? Ab.
         </p>
-        <div className="flex bg-white rounded-xl mt-8 md:mt-0 shadow-xl md:mx-8">
+        <div className="flex flex-wrap bg-white rounded-xl mt-8 shadow-xl md:mx-8">
           <input
             type="text"
-            className="px-3 md:px-5 py-4 md:flex-1 rounded-xl placeholder:text-sm placeholder:text-gray-100 outline-none ring-0"
+            className="px-3 flex-1 md:px-5 py-4 md:flex-1 rounded-xl placeholder:text-sm placeholder:text-gray-100 outline-none ring-0"
             placeholder="Newsletter"
           />
-          <button className="w-full md:w-fit text-purple-dark rounded-xl px-5 py-3">
+          <button className="ml-auto md:w-fit text-purple-dark rounded-xl px-5 py-3">
             Sign up
           </button>
         </div>
