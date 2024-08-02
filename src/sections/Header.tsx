@@ -32,11 +32,10 @@ export default function Header() {
           </h1>
           <p className="mt-6">Discover, collect and sell</p>
           <div className="relative w-full px-5 py-3 bg-white border rounded-xl md:max-w-fit">
-            <div className="flex flex-col gap-2 md:flex-row">
+            <div className="flex flex-col justify-center md:items-center gap-2 md:flex-row">
               <div className="relative w-full md:w-60">
                 <input
                   type="text"
-                  id="email-address-icon"
                   className="w-full px-2 py-3 text-sm font-normal text-gray-900 border-none rounded-xl outline-none focus:ring-0 placeholder-gray-50 peer ring-0 focused:ring-0 "
                   placeholder="Items, collection and creators"
                 />

@@ -44,7 +44,7 @@ function App() {
             </div>
           </div>
           <div className="flex-1 flex justify-end">
-            <img src={rightImage} alt="" />
+            <img src={rightImage} alt="" className="h-56 md:h-full" />
           </div>
         </div>
       </section>

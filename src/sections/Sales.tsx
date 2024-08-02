@@ -16,7 +16,7 @@ export default function Sales() {
           <h3 className="font-bold text-3xl mb-8">
             Check out the hottest Sale offers
           </h3>
-          <div className="flex flex-col">
+          <div className="">
             <div className="flex overflow-x-auto gap-2">
               {sales
                 .slice(0, 5)

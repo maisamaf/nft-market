@@ -14,7 +14,7 @@ function Navbar({}: Props) {
           <img src={logo} alt="" />
           <span className="font-bold text-xl">NFT Market</span>
         </Link>
-        <div className="flex ml-auto mr-10 md:order-2">
+        <div className="flex md:ml-auto md:mr-10 lg:mr-0 lg:ml-0 md:order-2">
           <ul className="flex gap-2">
             <button
               type="button"

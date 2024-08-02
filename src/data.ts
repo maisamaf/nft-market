@@ -39,7 +39,10 @@ export const auctions = [
     peopleBidding: "19 People are bidding",
     likes: 120,
     isFavorite: true,
-    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
+    className: {
+      width: "min-w-[16rem] md:min-w-[22rem]",
+      height: "h-[20rem] md:h-[30rem]",
+    },
   },
   {
     thumbnail: image2,
@@ -50,7 +53,10 @@ export const auctions = [
     peopleBidding: "12 People are bidding",
     likes: 98,
     isFavorite: true,
-    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
+    className: {
+      width: "min-w-[16rem] md:min-w-[22rem]",
+      height: "h-[20rem] md:h-[30rem]",
+    },
   },
   {
     thumbnail: image3,
@@ -61,7 +67,10 @@ export const auctions = [
     peopleBidding: "101 People are bidding",
     likes: 570,
     isFavorite: true,
-    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
+    className: {
+      width: "min-w-[16rem] md:min-w-[22rem]",
+      height: "h-[20rem] md:h-[30rem]",
+    },
   },
   {
     thumbnail: image4,
@@ -71,7 +80,10 @@ export const auctions = [
     timeLeft: "02:41 min left",
     peopleBidding: "35 People are bidding",
     likes: 120,
-    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
+    className: {
+      width: "min-w-[16rem] md:min-w-[22rem]",
+      height: "h-[20rem] md:h-[30rem]",
+    },
   },
   {
     thumbnail: image5,
@@ -82,7 +94,10 @@ export const auctions = [
     peopleBidding: "14 People are bidding",
     likes: 54,
     isFavorite: true,
-    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
+    className: {
+      width: "min-w-[16rem] md:min-w-[22rem]",
+      height: "h-[20rem] md:h-[30rem]",
+    },
   },
   {
     thumbnail: image4,
@@ -93,7 +108,10 @@ export const auctions = [
     peopleBidding: "35 People are bidding",
     likes: 120,
     isFavorite: true,
-    className: { width: "min-w-[22rem]", height: "h-[30rem]" },
+    className: {
+      width: "min-w-[16rem] md:min-w-[22rem]",
+      height: "h-[20rem] md:h-[30rem]",
+    },
   },
 ];
 
@@ -105,7 +123,7 @@ export const sales = [
     price: "3.19 ETH",
     timeLeft: "12:15",
     peopleBidding: "19 People are bidding",
-    className: { width: "w-[16rem]", height: "h-[18rem]" },
+    className: { width: "min-w-[16rem]", height: "h-[18rem]" },
   },
   {
     thumbnail: image2,
@@ -113,7 +131,7 @@ export const sales = [
     price: "1.63 ETH",
     timeLeft: "37:01",
     peopleBidding: "12 People are bidding",
-    className: { width: "w-[16rem]", height: "h-[18rem]" },
+    className: { width: "min-w-[16rem]", height: "h-[18rem]" },
   },
   {
     thumbnail: image3,
@@ -121,7 +139,7 @@ export const sales = [
     price: "1.11 ETH",
     timeLeft: "22:59",
     peopleBidding: "101 People are bidding",
-    className: { width: "w-[16rem]", height: "h-[18rem]" },
+    className: { width: "min-w-[16rem]", height: "h-[18rem]" },
   },
   {
     thumbnail: image4,
@@ -129,7 +147,7 @@ export const sales = [
     price: "3.19 ETH",
     timeLeft: "02:41",
     peopleBidding: "35 People are bidding",
-    className: { width: "w-[16rem]", height: "h-[18rem]" },
+    className: { width: "min-w-[16rem]", height: "h-[18rem]" },
   },
   {
     thumbnail: image5,
@@ -137,7 +155,7 @@ export const sales = [
     price: "2.55 ETH",
     timeLeft: "57:15",
     peopleBidding: "14 People are bidding",
-    className: { width: "w-[16rem]", height: "h-[18rem]" },
+    className: { width: "min-w-[16rem]", height: "h-[18rem]" },
   },
 ];
 

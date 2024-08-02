@@ -93,8 +93,8 @@ export default function PopularAuctions() {
           </button>
         </li>
       </ul>
-      <div className="flex flex-col items-center">
-        <div className="mt-12 flex gap-5 overflow-x-scroll flex-row-reverse">
+      <div className="flex flex-col">
+        <div className="mt-12 flex gap-5 overflow-x-scroll">
           {popularAuctions.map(
             (
               { thumbnail, title, price, timeLeft, peopleBidding, className },
@@ -116,7 +116,7 @@ export default function PopularAuctions() {
         </div>
         <button
           type="button"
-          className="rounded-xl border border-gray-100 text-sm text-gray-100 mt-16 px-4 py-2 w-fit"
+          className="rounded-xl border mx-auto border-gray-100 text-sm text-gray-100 mt-16 px-4 py-2 w-fit"
         >
           Show me more
         </button>

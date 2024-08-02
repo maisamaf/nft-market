@@ -24,7 +24,7 @@ export default function Card({
   className,
 }: Props) {
   return (
-    <div className={`flex flex-col ${className.width}`}>
+    <div className={`flex flex-col shrink-0 ${className.width}`}>
       <img
         src={thumbnail}
         alt={title}

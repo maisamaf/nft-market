@@ -6,11 +6,11 @@ import Card from "../components/Card";
 
 export default function Auctions() {
   return (
-    <section className="w-full pb-20 mt-16">
+    <section className="w-full mb-20 mt-16">
       <h2 className="text-3xl md:text-4xl text-dark-100 mb-16 text-center">
         Latest Live Auctions
       </h2>
-      <div className="px-4 flex gap-8 flex-row-reverse overflow-x-auto">
+      <div className="mx-3 flex gap-8 overflow-x-auto">
         {auctions.map(
           (
             {
